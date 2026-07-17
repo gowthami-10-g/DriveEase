@@ -9,7 +9,7 @@ import Booking from "./pages/Booking";
 import BookingSuccess from "./pages/BookingSuccess";
 import About from "./pages/About";
 import AdminLogin from "./pages/AdminLogin";
-
+import Admin from "./pages/Admin";
 
 import "./App.css";
 
@@ -19,6 +19,7 @@ function App() {
       <Navbar />
 
       <Routes>
+        <Route path="/admin" element={<Admin />} />
         <Route path="/" element={<Home />} />
 
         <Route path="/cars" element={<Cars />} />
